@@ -1,0 +1,29 @@
+<h1>Your Budgets</h1>
+<!-- Budget table -->
+<div class="container mt-5">
+    <h2>Budget Overview</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col"><input type="checkbox" id="selectAll" (change)="toggleSelectAll()"></th>
+                <th scope="col">Budget Name</th>
+                <th scope="col">Monthly Income</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">End Date</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let budget of budgets; let i = index">
+                <td><input type="checkbox" class="budget-checkbox" [(ngModel)]="selectAll"></td>
+                <td>{{ budget.name }}</td>
+                <td>${{ budget.income }}</td>
+                <td>{{ budget.startDate }}</td>
+                <td>{{ budget.endDate }}</td>
+                <td><button class="btn btn-warning btn-sm" (click)="editBudget(i)">Edit</button></td>
+                <td><button class="btn btn-danger btn-sm" (click)="deleteBudget(i)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
