@@ -33,5 +33,24 @@ export class BudgetComponent {
     console.log('Delete budget:', this.budgets[index]);
     this.budgets.splice(index, 1);
   }
+
+  addNewBudget() {
+    const name = prompt('Enter Budget Name:');
+    const income = prompt('Enter Monthly Income:');
+    const startDate = prompt('Enter Start Date (YYYY-MM-DD):');
+    const endDate = prompt('Enter End Date (YYYY-MM-DD):');
+
+    if (name && income && startDate && endDate) {
+      this.budgets.push({
+        name: name,
+        income: parseFloat(income),
+        startDate: startDate,
+        endDate: endDate
+      });
+    } else {
+      alert('Please fill in all fields');
+    }
+  }
 }
+
 
