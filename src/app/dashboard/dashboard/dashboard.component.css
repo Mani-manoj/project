@@ -1,0 +1,11 @@
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    margin-right: 20px;
+}
+
+.nav-link:hover {
+    color: #007bff; /* Change color on hover */
+}

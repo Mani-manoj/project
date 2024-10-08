@@ -3,12 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './guard1.guard';
 import { HeaderComponent } from './add/header/header.component';
 
+
 const routes: Routes = [
 
   {
     path:'',
     component:HeaderComponent
-  }
+  },
+ 
 ];
 
 @NgModule({
