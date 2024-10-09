@@ -11,6 +11,8 @@ import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardComponent } from './card/card.component';
 import { RouterModule } from '@angular/router';
+import { BudgetComponent } from './budget/budget.component';
+import { FormsModule } from '@angular/forms';
 // import { HomepageComponent } from '../home/homepage/homepage.component';
 // import { HomeModule } from '../home/home.module';
 // import { TwoComponent } from './two/two.component';
@@ -25,6 +27,8 @@ import { RouterModule } from '@angular/router';
     BodyComponent,
     FooterComponent,
     CardComponent,
+    BudgetComponent,
+
     // SigninComponent
     // HomepageComponent
     
@@ -36,7 +40,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    FormsModule
     
 
   ],
