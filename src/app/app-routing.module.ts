@@ -10,6 +10,8 @@ const routes: Routes = [
     path:'',
     component:HeaderComponent
   },
+  // lazy loading 
+
  
 ];
 
