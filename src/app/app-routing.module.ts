@@ -11,6 +11,10 @@ const routes: Routes = [
     component:HeaderComponent
   },
   // lazy loading 
+  {
+    path: 'auth1',
+    loadChildren: () => import('./auth1/auth1.module').then(m => m.Auth1Module)
+  }
 
  
 ];
