@@ -6,15 +6,15 @@ import { HeaderComponent } from './add/header/header.component';
 
 const routes: Routes = [
 
-  {
-    path:'',
-    component:HeaderComponent
-  },
-  // lazy loading 
-  {
-    path: '',
-    loadChildren: () => import('./auth1/auth1.module').then(m => m.Auth1Module)
-  }
+  // {
+  //   path:'',
+  //   component:HeaderComponent
+  // },
+  // // lazy loading 
+  // {
+  //   path: '',
+  //   loadChildren: () => import('./auth1/auth1.module').then(m => m.Auth1Module)
+  // }
 
  
 ];
