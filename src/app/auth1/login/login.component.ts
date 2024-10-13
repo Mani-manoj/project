@@ -32,6 +32,7 @@ export class LoginComponent {
   }
 
   toggleForm(form: 'login' | 'register') {
+    console.log('Toggling form to:', form);
     this.activeForm = form;
   }
 

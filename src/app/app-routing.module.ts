@@ -12,7 +12,7 @@ const routes: Routes = [
   },
   // lazy loading 
   {
-    path: 'auth1',
+    path: '',
     loadChildren: () => import('./auth1/auth1.module').then(m => m.Auth1Module)
   }
 
